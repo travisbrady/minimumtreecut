@@ -9,13 +9,11 @@ This program provides a new graph-based transductive learning algorithm. It enjo
 Yan-Ming Zhang, Kaizhu Huang, and Cheng-Lin Liu. Fast graph-based transductive learning via minimum tree cut. In IEEE International Conference on Data Mining, 2011 (ICDM2011).
 
 
-0. Installation
-===============
+## 0. Installation
 
 On Linux systems, type `make' to build the `mtc' programs. Run it without arguments to show the usage.
 
-1. Usage
-========
+## 1. Usage
 ```
 	Usaage: mtc [options] graph_file train_file output_file
 	options:
@@ -26,8 +24,7 @@ On Linux systems, type `make' to build the `mtc' programs. Run it without argume
 	-n: set the number of spanning trees (default: 1)
 ```
 
-2. Data format
-==============
+## Data format
 ```
 graph_file:
 idx1,idx2,weight
@@ -55,8 +52,7 @@ idx:label
 ```
 Each line contains the index of an unlabeled node and its predicted label. The labels must be continuous integers and start from 0.
 
-3. Example datasets
-===================
+## 3. Example datasets
 
 mnist, usps, rcv1, news20
 
