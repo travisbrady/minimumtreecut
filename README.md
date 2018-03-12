@@ -11,41 +11,48 @@ Yan-Ming Zhang, Kaizhu Huang, and Cheng-Lin Liu. Fast graph-based transductive l
 
 0. Installation
 ===============
+
 On Linux systems, type `make' to build the `mtc' programs. Run it without arguments to show the usage.
 
 1. Usage
 ========
-	Useage: mtc [options] graph_file train_file output_file
+```
+	Usaage: mtc [options] graph_file train_file output_file
 	options:
 	-t: select the type of spanning tree (default: 0)
 		0 -- minimum spanning tree\n"
 		1 -- shortest path tree
 		2 -- random spanning tree
 	-n: set the number of spanning trees (default: 1)
-
+```
 
 2. Data format
 ==============
-
+```
 graph_file:
 idx1,idx2,weight
+```
 .
 .
 .
 Each line contains an edge and is ended by a '\n' character. The node index must be continuous integers and start from 0.
 
+```
 label_file:
 idx:label
 .
 .
 .
+```
 Each line contains the index of an labeled node and its label. The labels must be continuous integers and start from 0.
 
 output_file:
+```
 idx:label
 .
 .
 .
+```
 Each line contains the index of an unlabeled node and its predicted label. The labels must be continuous integers and start from 0.
 
 3. Example datasets
